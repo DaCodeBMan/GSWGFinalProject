@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.618;
+}
+
+html, body {
+    background: #191919;
+}
+
+#TheDevGatheringLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    z-index: 9999;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeUpIn;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#NameCloudCanvas {
+    background-image: linear-gradient(to left bottom, #051937, #09274b, #0c3660, #0b4675, #04578b);
+    box-shadow: 0px 10px 40px rgba(0,0,0, .5);
+    border-radius: 14px;
+}
+
+#NameCloudContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SiteFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #191919;
+
+    #DevGatheringLogo {
+        width: 40px;
+    }
+}
+
+@keyframes fadeUpIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) translate(-50%, -50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) translate(-50%, -50%);
+    }
+}
