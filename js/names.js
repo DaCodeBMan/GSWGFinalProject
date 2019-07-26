@@ -9,4 +9,5 @@ export const warren = 'Warren';
 export const ashley = 'Ashley';
 export const blair = 'Blair';
 export const shadow = 'Shadow';
+export const cassie = 'Cassie';
 // export const [yourName] = "Your name"
