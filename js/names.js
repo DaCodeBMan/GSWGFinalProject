@@ -16,3 +16,4 @@ export const doug = 'Doug';
 export const andrea = 'Andrea';
 export const josh = 'josh';
 // export const [yourName] = "Your name"
+export const james = 'James';
